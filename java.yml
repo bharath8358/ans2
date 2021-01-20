@@ -8,4 +8,4 @@
      state: present
     ignore_errors: yes
 
-    include_files: jav3.yml
+    include: jav3.yml
