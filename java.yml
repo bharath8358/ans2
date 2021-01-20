@@ -7,7 +7,7 @@
      name: wget
      state: present
 
-  - name: install httpd
+  - name: install tree
     yum:
      name: httpd
      state: present   
