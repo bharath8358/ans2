@@ -2,10 +2,4 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install tree
-    yum:
-     name: tree
-     state: present
-    ignore_errors: yes
-
-    include: jav3.yml
+  - include: jav3.yml
