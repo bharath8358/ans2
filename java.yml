@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install wget
+    yum:
+     name: wget
+     state: present
+    ignore_errors: yes
+    
+  - name: install httpd
+    yum:
+     name: httpd
+     state: present   
