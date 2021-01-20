@@ -8,7 +8,5 @@
      state: present
     ignore_errors: yes
 
-  - name: install tree
-    yum:
-     name: httpd
-     state: present   
+    include_files: java3.yml
+    
