@@ -6,8 +6,7 @@
     yum:
      name: wget
      state: present
-    ignore_errors: yes
-    
+
   - name: install httpd
     yum:
      name: httpd
