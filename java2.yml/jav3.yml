@@ -1,4 +1,9 @@
-- name: install httpd
-  yum: 
-   name: httpd
-   state: present
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install java
+    apt:
+      name: "{{myjavaubuntu}}"
+      state: present
+    when: ansible_os_family =="Debian"
